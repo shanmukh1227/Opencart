@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-17T17:36:49 WAT" name="Suite" finished-at="2025-10-17T17:37:22 WAT" duration-ms="33417">
+    <groups>
+      <group name="Master">
+        <method signature="RegisterTest001.Regtest()[pri:0, instance:testcases.RegisterTest001@21ba0741]" name="Regtest" class="testcases.RegisterTest001"/>
+        <method signature="RegisterTest001.Regtest()[pri:0, instance:testcases.RegisterTest001@10a9d961]" name="Regtest" class="testcases.RegisterTest001"/>
+      </group> <!-- Master -->
+      <group name="Regression">
+        <method signature="RegisterTest001.Regtest()[pri:0, instance:testcases.RegisterTest001@21ba0741]" name="Regtest" class="testcases.RegisterTest001"/>
+        <method signature="RegisterTest001.Regtest()[pri:0, instance:testcases.RegisterTest001@10a9d961]" name="Regtest" class="testcases.RegisterTest001"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test started-at="2025-10-17T17:36:49 WAT" name="Linux-Chrome" finished-at="2025-10-17T17:37:10 WAT" duration-ms="21325">
+      <class name="testcases.RegisterTest001">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.RegisterTest001@21ba0741]" started-at="2025-10-17T17:36:49 WAT" name="setup" finished-at="2025-10-17T17:36:58 WAT" duration-ms="8474" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[linux]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Regtest()[pri:0, instance:testcases.RegisterTest001@21ba0741]" started-at="2025-10-17T17:36:58 WAT" name="Regtest" finished-at="2025-10-17T17:37:09 WAT" duration-ms="11865" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Your Account Has Been Created!] but found [Unable to locate element: //h1[normalize-space()='Your Account Has Been Created!']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ca5e1fea-3159-426e-8277-bc67a5bb7c9d, findElement {using=xpath, value=//h1[normalize-space()='Your Account Has Been Created!']}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 143.0.4, container:hostname: 13777d3d9935, moz:accessibilityChecks: false, moz:buildID: 20251003115653, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 6.6.87.2-microsoft-standard..., moz:processID: 198, moz:profile: /tmp/rust_mozprofileS3q4lJ, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, se:containerName: 13777d3d9935, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.19.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Session ID: ca5e1fea-3159-426e-8277-bc67a5bb7c9d]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Your Account Has Been Created!] but found [Unable to locate element: //h1[normalize-space()='Your Account Has Been Created!']
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: '4.36.0', revision: '6d115cfd87'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24.0.2'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [ca5e1fea-3159-426e-8277-bc67a5bb7c9d, findElement {using=xpath, value=//h1[normalize-space()='Your Account Has Been Created!']}]
+Capabilities {acceptInsecureCerts: false, browserName: firefox, browserVersion: 143.0.4, container:hostname: 13777d3d9935, moz:accessibilityChecks: false, moz:buildID: 20251003115653, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 6.6.87.2-microsoft-standard..., moz:processID: 198, moz:profile: /tmp/rust_mozprofileS3q4lJ, moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdpEnabled: false, se:containerName: 13777d3d9935, se:deleteSessionOnUi: true, se:downloadsEnabled: true, se:noVncPort: 7900, se:vnc: ws://172.19.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.19.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (X11; Linux x86...}
+Session ID: ca5e1fea-3159-426e-8277-bc67a5bb7c9d]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at testcases.RegisterTest001.Regtest(RegisterTest001.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Regtest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegisterTest001@21ba0741]" started-at="2025-10-17T17:37:10 WAT" name="tearDown" finished-at="2025-10-17T17:37:10 WAT" duration-ms="649" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.RegisterTest001 -->
+    </test> <!-- Linux-Chrome -->
+    <test started-at="2025-10-17T17:37:12 WAT" name="Linux-Edge" finished-at="2025-10-17T17:37:22 WAT" duration-ms="9955">
+      <class name="testcases.RegisterTest001">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.RegisterTest001@10a9d961]" started-at="2025-10-17T17:37:12 WAT" name="setup" finished-at="2025-10-17T17:37:19 WAT" duration-ms="6508" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[linux]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Regtest()[pri:0, instance:testcases.RegisterTest001@10a9d961]" started-at="2025-10-17T17:37:19 WAT" name="Regtest" finished-at="2025-10-17T17:37:22 WAT" duration-ms="3355" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Regtest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.RegisterTest001@10a9d961]" started-at="2025-10-17T17:37:22 WAT" name="tearDown" finished-at="2025-10-17T17:37:22 WAT" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.RegisterTest001 -->
+    </test> <!-- Linux-Edge -->
+  </suite> <!-- Suite -->
+</testng-results>
